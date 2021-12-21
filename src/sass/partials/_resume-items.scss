@@ -1,0 +1,44 @@
+section.resume-section {
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
+  max-width: 75rem;
+
+  .resume-item {
+
+    &__date {
+      min-width: none;
+    }
+  }
+}
+
+.main-heading-span {
+  color: $theme-color;
+}
+
+.main-mail {
+  color: $theme-color;
+
+  &:hover {
+    color: rgb(46, 115, 158);
+    text-decoration: none;
+  }
+}
+
+@media (min-width: 768px) {
+  section.resume-section {
+    min-height: 100vh;
+
+    &__item {
+      &__date {
+        min-width: 18rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  section.resume-section {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+}
